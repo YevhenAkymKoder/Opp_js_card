@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Cards editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrypt.js" defer></script>
+</head>
+<body>
+    
+    <h1>Card Example. Created used JS</h1>
+    <!--- Card example. Det er code som vi brukte i kurset. --->
+    <div id="card" class="card">
+        
+    </div>
+
+    <!--- New code to change card using input --->
+    <h1>JS / Edit Player NAME</h1>
+    
+    <input type="text" id="newTitleInput" placeholder="Enter new Name">
+    <input type="button" onclick="changeTitle()" value="Change Name">
+
+    <div id="card-new" class="card-new">
+<!--- result from JS code her --->
+    </div>
+
+
+    <!--- New code to create a new card and change manually using input --->
+    <h1>JS / Create a new card</h1>
+
+    <select id="imageSelect" >
+        <option value="card02.jpg">Image 1</option>
+        <option value="card03.jpg">Image 2</option>
+        <option value="card04.jpg">Image 3</option>
+        <option value="card05.jpg">Image 4</option>
+      </select>
+      <input type="text" id="textInput" placeholder="Enter a new Player Name">
+      <button onclick="createImage()">Create New Player</button>
+
+      <div id="imageContainer">
+        <!--- result from JS code her --->
+      </div>
+    
+</body>
+</html>
